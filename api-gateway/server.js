@@ -10,5 +10,5 @@ app.use("/payments", (req, res) => proxy.web(req, res, { target: "http://localho
 app.use("/notifications", (req, res) => proxy.web(req, res, { target: "http://localhost:4003" }));
 
 app.listen(PORT, () => {
-  console.log(`API Gateway running on port ${PORT}`);
+    console.log(`API Gateway running on port ${PORT}`);
 });
